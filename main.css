@@ -38,7 +38,13 @@ header{
 
 header img{
     height: 30px;
-    padding: 5px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+header img:hover{
+    border-radius: 10px;
+    background-color: white;
 }
 
 .header-right{
@@ -50,6 +56,15 @@ header img{
     height: 30px;
 }
 
+.header-right-a{
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-right-a:hover{
+    transform: scale(1.2);
+}
+
 h1{
     color:#004225;
     text-align: center;
@@ -57,6 +72,11 @@ h1{
     font-weight: 700;
     display: inline-block;
     padding-left:30px;
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover{
+    transform: scale(1.1);
 }
 
 .header-nav{
@@ -71,15 +91,40 @@ h1{
     padding:0;
     align-content: flex-end;
     font-size: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-nav a{
+.header-nav li:hover{
+    text-decoration: underline;
+}
+/* nav a{
     font-style: normal;
     color:white;
     text-decoration:none;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
+    transition: all 0.3s ease-in-out;
 }
+
+.nav a:hover{
+    color: #004225;
+    transform: scale(1.25s);
+} */
+
+.header-nav-a{
+    font-style: normal;
+    color:white;
+    text-decoration:none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav-a:hover {
+    color: #004225;
+    font-weight: 600;
+}
+
 
 main{
     grid-area: main;
