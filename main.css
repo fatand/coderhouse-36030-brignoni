@@ -592,6 +592,43 @@ td, th {
     background-color: #004225;
     color: white;
   }
+
+/* ANIMACION A SALE */
+.left-bar-sale{
+    color: blue;
+
+    animation-name: movimiento-sale;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+
+}
+
+@keyframes movimiento-sale {
+    0%{
+        color: red;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    25%{
+        color: rgb(0, 0, 0);
+    }
+
+    75%{
+        color: red;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    100%{
+        color: rgb(0, 0, 0);
+    }
+
+}
+
+/* FIN ANIMACION A SALE */
+
 /* FIN Estilo particular a cart.html */
 
 /* ********************************** */
